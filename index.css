@@ -18,6 +18,9 @@ img{
     width: 50%;
     height: 50%;
 }
+img:hover{
+    transform: scale(1.5); 
+}
 
 .right_side{
     padding: 45px;
@@ -217,24 +220,19 @@ p{
     color: darkcyan;
 }
 
-.skills .box{
-    position: relative;
-    width: 100%;
+
+
+.langages ul{
     display: grid;
-    grid-template-columns: 150px 1fr;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(5,1fr);
 }
-
-.skills .box h4{
-    text-transform: uppercase;
-    color: grey;
-    font-weight: 500;
+.langages ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-size:4.5rem;
 }
-
-.skills .box h4 .percent{
-    position: relative;
-    width: 100%;
+.langages ul li:hover{
+    font-size:6rem;
 }
 
 .interest ul{
@@ -261,6 +259,10 @@ p{
     .interest ul{
         grid-template-columns: repeat(2,1fr);
     }
+    .langages ul{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
 }
 
 @media (max-width: 600px)
@@ -270,6 +272,10 @@ p{
         margin-bottom: 10px;
     }
     .interest ul{
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
+    }
+    .langages ul{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
     }
 }
