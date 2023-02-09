@@ -1,0 +1,275 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+}
+
+img{
+    width: 50%;
+    height: 50%;
+}
+
+.right_side{
+    padding: 45px;
+}
+.left_side{
+    
+}
+
+
+
+
+body{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.container .left_side{
+    position: relative;
+    background-color: darkslategrey;
+    padding: 40px;
+}
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.profileText .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imgBx img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2{
+    color:white;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span{
+    font-size: 0.8em;   
+    font-weight: 300; 
+}
+
+.contactInfo{
+    padding-top: 30px;
+}
+.title{
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+.contactInfo ul{
+    position: relative;
+
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0 ;
+    cursor: pointer;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: darkcyan;
+}
+.contactInfo ul li span{
+    color: white;
+    font-weight: 300;
+}
+
+
+.title h3{
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+.contactInfo.education li{
+    margin-bottom: 15px;
+}
+.contactInfo.education h5{
+    font-size: 1rem;
+    color: darkcyan;
+    font-weight: 500;
+}
+.contactInfo.education h4{
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 500;
+}
+.contactInfo.education h2{
+    font-size: 0.8rem;
+    color: cyan;
+    font-weight: 500;
+}
+
+
+.contactInfo.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: rgb(74, 129, 129);
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo.language .percent div{
+    position: absolute;   
+    top:0;
+    left:0;
+    height: 100%;
+    background-color: darkgreen;
+}
+.contactInfo .text-lang{
+    font-size: 0.8rem;
+    color: darkcyan;
+}
+
+
+
+.container .right{
+    position: relative;
+    background-color: white;
+    padding: 40px;
+}
+
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+
+.title2 {
+    color: blue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+p{
+    color: #333;
+}
+
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+
+}
+
+.about .box .year_company{
+    min-width: 150px;
+}
+
+.about .box .year_company h5{
+    text-transform: uppercase;
+    color: grey;
+    font-weight: 600;
+}
+
+.about .box .text h4{
+    text-transform: uppercase;
+    color: darkcyan;
+}
+
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4{
+    text-transform: uppercase;
+    color: grey;
+    font-weight: 500;
+}
+
+.skills .box h4 .percent{
+    position: relative;
+    width: 100%;
+}
+
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.interest ul li{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.interest ul li .fa{
+    color: darkcyan;
+    font-size: 2rem;
+}
+
+@media (max-width: 800px)
+{
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 600px)
+{
+    .about .box{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .interest ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
