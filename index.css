@@ -12,23 +12,44 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', sans-serif;
+    /* font-family: 'Dancing Script', cursive; */
 }
 
-img{
+hr{
     width: 50%;
-    height: 50%;
+    margin: 15px;
+}
+
+
+img{
+    transition: transform .1s;    
 }
 img:hover{
     transform: scale(1.5); 
 }
 
 .right_side{
-    padding: 45px;
+    padding: 25px;
+    padding-left: 6%;
+
+    background: rgb(47,79,79);
+    background: linear-gradient(90deg, rgba(47,79,79,1) 0%, rgba(154,181,181,1) 3%, rgba(255,255,255,1) 6%);    
+
 }
+
+
 .left_side{
     
 }
 
+.nomprenom{
+    /* font-family: 'Dancing Script', cursive; */
+}
+
+.lang-icon{
+    width: 10%;
+    height: 10%;
+}
 
 
 
@@ -44,29 +65,40 @@ body{
     width: 100%;
     max-width: 1000px;
     min-height: 1000px;
-    margin: 50px;
-    background-color: white;
+    margin: 00px;
+    background-color: darkslategrey;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+    /* background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 3px, transparent 3px) 0% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px) 100% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px) 0% 100%/8px 8px no-repeat,
+    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 16px) no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 10px) no-repeat,
+    repeating-linear-gradient(45deg, #000000 0%, #000000 5%, darkcyan 5%, darkcyan 10%);
+    border-radius: 8px;
+    padding: 9px;
+    box-sizing: border-box; */
 }
 .container .left_side{
     position: relative;
     background-color: darkslategrey;
-    padding: 40px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
 .profileText{
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .profileText .imgBx{
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -93,7 +125,7 @@ body{
 }
 
 .contactInfo{
-    padding-top: 30px;
+    padding-top: 5px;
 }
 .title{
     font-size: 1.5rem;
@@ -110,9 +142,15 @@ body{
 .contactInfo ul li{
     position: relative;
     list-style: none;
-    margin: 10px 0 ;
+    margin: 5px 0 ;
     cursor: pointer;
+    transition: transform .1s;
 }
+.contacts ul li:hover{
+    transform: scale(1.2); 
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
 .contactInfo ul li .icon{
     display: inline-block;
     width: 30px;
@@ -123,6 +161,13 @@ body{
     color: white;
     font-weight: 300;
 }
+.contactInfo ul li .text{
+    font-size: 1rem;
+}
+.contactInfo ul li .textbig{
+    font-size: 0.8rem;
+}
+
 
 
 .title h3{
@@ -153,25 +198,27 @@ body{
 }
 
 
-.contactInfo.language .percent{
-    position: relative;
-    width: 100%;
-    height: 6px;
-    background-color: rgb(74, 129, 129);
-    display: block;
-    margin-top: 5px;
+
+.contactInfo.langues{
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    padding-left: 10%;
 }
-.contactInfo.language .percent div{
-    position: absolute;   
-    top:0;
-    left:0;
-    height: 100%;
-    background-color: darkgreen;
-}
+
 .contactInfo .text-lang{
     font-size: 0.8rem;
     color: darkcyan;
 }
+.contactInfo img{
+    width: 10%;
+    height: 10%;
+}
+.contactInfo .language{
+
+}
+
+
 
 
 
@@ -182,11 +229,12 @@ body{
 }
 
 .about{
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 }
 .about:last-child{
     margin-bottom: 0;
 }
+
 
 .title2 {
     color: blue;
@@ -196,6 +244,14 @@ body{
 }
 p{
     color: #333;
+}
+.textExp p{
+    font-size: 0.8rem;
+    color: grey;
+}
+.textProfile{
+    font-size: 0.8rem;
+    color: grey;
 }
 
 .about .box{
@@ -225,15 +281,23 @@ p{
 .langages ul{
     display: grid;
     grid-template-columns: repeat(5,1fr);
+    align-items: center;
 }
 .langages ul li{
     list-style: none;
-    margin: 10px 0;
-    font-size:4.5rem;
+    margin: 0 15px 0;
+    font-size: 4rem;
+    transition: transform .2s;
 }
 .langages ul li:hover{
-    font-size:6rem;
+    transform: scale(1.5); 
 }
+
+
+
+
+
+
 
 .interest ul{
     display: grid;
@@ -250,6 +314,23 @@ p{
     font-size: 2rem;
 }
 
+
+
+
+
+
+.qrcode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qrcode img{
+    width: 20vw;
+    height: 25vh;
+    transition: transform .1s;
+}
+
+
 @media (max-width: 800px)
 {
     .container{
@@ -262,6 +343,29 @@ p{
     .langages ul{
         display: grid;
         grid-template-columns: repeat(4,1fr);
+    }
+    .contactInfo.langues{
+        justify-content: end;
+        text-align: center;
+    }
+
+    .right_side{
+        background: rgb(47,79,79);
+        background: linear-gradient(180deg, rgba(47,79,79,1) 0%, rgba(154,181,181,1) 3%, rgba(255,255,255,1) 6%);    
+        padding-top: 10%;
+    }
+    hr{
+        width: 80%;
+    }
+    body > div > div.left_side > div.contactInfo.contacts{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body > div > div.left_side > div.contactInfo.education{
+        display:flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -278,4 +382,34 @@ p{
         display: grid;
         grid-template-columns: repeat(3,1fr);
     }
+    .contactInfo.langues{
+        justify-content: end;
+        text-align: center;
+    }
+
+    .right_side{
+        background: rgb(47,79,79);
+        background: linear-gradient(180deg, rgba(47,79,79,1) 0%, rgba(154,181,181,1) 3%, rgba(255,255,255,1) 6%);    
+        padding-top: 10%;
+    }
+    hr{
+        width: 80%;
+    }
+    body > div > div.left_side > div.contactInfo.contacts{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body > div > div.left_side > div.contactInfo.education{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
+
+
+/* tests */
+div{
+    border: 2px outset #ff6550;
+}
+
