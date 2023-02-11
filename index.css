@@ -29,8 +29,8 @@ img:hover{
 }
 
 .right_side{
-    padding: 25px;
-    padding-left: 6%;
+    padding-top: 9%;
+    padding-left: 8%;
 
     background: rgb(47,79,79);
     background: linear-gradient(90deg, rgba(47,79,79,1) 0%, rgba(154,181,181,1) 3%, rgba(255,255,255,1) 6%);    
@@ -64,8 +64,9 @@ body{
     position: relative;
     width: 100%;
     max-width: 1000px;
-    min-height: 1000px;
-    margin: 00px;
+    /* min-height: 1000px; */
+    margin: 0px;
+    padding-top: 0%;
     background-color: darkslategrey;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -149,6 +150,7 @@ body{
 .contacts ul li:hover{
     transform: scale(1.2); 
     background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1%;
 }
 
 .contactInfo ul li .icon{
@@ -274,6 +276,15 @@ p{
 .about .box .text h4{
     text-transform: uppercase;
     color: darkcyan;
+}
+
+body > div > div.right_side > div:nth-child(2) > div:nth-child(3) > div.year_company > img{
+    width: 60%;
+    height: 60%;
+}
+body > div > div.right_side > div:nth-child(2) > div:nth-child(2) > div.year_company > img{
+    width: 80%;
+    height: 60%;
 }
 
 
@@ -409,7 +420,7 @@ p{
 
 
 /* tests */
-div{
+/* div{
     border: 2px outset #ff6550;
-}
+} */
 
