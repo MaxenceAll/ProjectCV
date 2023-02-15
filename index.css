@@ -428,4 +428,47 @@ body > div > div.right_side > div:nth-child(2){
 /* div{
     border: 2px outset #ff6550;
 } */
+ 
+  
+.pre {
+/* here size */
+font-size: 1.5rem;
+/* font-weight: bold; */
+background: hsl(222, 45%, 7%);
+padding: 2rem;
+border-radius: 1rem;
 
+position: relative;
+
+transform-style: preserve-3d;
+transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY));
+}
+
+.pre::before,
+.pre::after {
+content: "";
+position: absolute;
+border-radius: inherit;
+}
+
+/* shadow */
+.pre::before {
+inset: 0.75rem;
+border-radius: inherit;
+background: black;
+z-index: -1;
+transform: translateZ(-50px);
+filter: blur(15px);
+opacity: 0.5;
+}
+
+/* gradient thingy */
+.pre::after {
+z-index: -2;
+inset: -1rem;
+background: linear-gradient(-45deg, darkcyan, black);
+transform: translateZ(-80px);
+}  
+  
+
+  
