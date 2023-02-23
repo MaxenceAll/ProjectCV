@@ -42,9 +42,6 @@ img:hover{
     
 }
 
-.nomprenom{
-    /* font-family: 'Dancing Script', cursive; */
-}
 
 .lang-icon{
     width: 10%;
@@ -64,7 +61,7 @@ body{
     position: relative;
     width: 100%;
     max-width: 1000px;
-    /* min-height: 1000px; */
+    min-height: 1000px;
     margin: 0px;
     padding-top: 0%;
     background-color: darkslategrey;
@@ -230,6 +227,18 @@ body{
     padding: 40px;
 }
 
+.rechercheactuelle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration:underline;
+    font-size: 2.8rem;
+    color: darkcyan;
+    margin-top: -2rem;
+    padding-bottom: 2rem;
+}
+
+
 .about{
     margin-bottom: 15px;
 }
@@ -260,7 +269,6 @@ p{
     display: flex;
     flex-direction: row;
     margin: 20px 0;
-
 }
 
 .about .box .year_company{
@@ -277,6 +285,14 @@ p{
     text-transform: uppercase;
     color: darkcyan;
 }
+
+.img_company{
+
+    width: 60%;
+    height: auto;
+
+}
+
 
 body > div > div.right_side > div:nth-child(2) > div:nth-child(3) > div.year_company > img{
     width: 60%;
@@ -329,10 +345,6 @@ body > div > div.right_side > div:nth-child(2){
     color: darkcyan;
     font-size: 2rem;
 }
-
-
-
-
 
 
 .qrcode{
