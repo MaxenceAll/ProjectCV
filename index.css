@@ -233,7 +233,7 @@ body{
     text-align: center;
     text-decoration:underline;
     font-size: 2.8rem;
-    color: darkcyan;
+    color: black;
     margin-top: -2rem;
     padding-bottom: 2rem;
 }
@@ -351,10 +351,12 @@ body > div > div.right_side > div:nth-child(2){
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
 }
 .qrcode img{
-    width: 20vw;
-    height: 25vh;
+    padding-top: 5%;
+    width: 25%;
+    height: auto;
     transition: transform .1s;
 }
 
