@@ -59,8 +59,8 @@ body{
 }
 .container{
     position: relative;
-    width: 100%;
-    max-width: 1000px;
+    width: 80%;
+    max-width: 750px;
     min-height: 1000px;
     margin: 0px;
     padding-top: 0%;
@@ -99,6 +99,7 @@ body{
     height: 180px;
     border-radius: 50%;
     overflow: hidden;
+    margin-top: 25%;
 }
 .profileText .imgBx img{
     position: absolute;
