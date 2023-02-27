@@ -60,8 +60,8 @@ body{
 .container{
     position: relative;
     width: 80%;
-    max-width: 760px;
-    min-height: 1000px;
+    max-width: 860px;
+    max-height: 1000px;
     margin: 0px;
     padding-top: 0%;
     background-color: darkslategrey;
@@ -99,7 +99,7 @@ body{
     height: 180px;
     border-radius: 50%;
     overflow: hidden;
-    margin-top: 25%;
+    /* margin-top: 25%; */
 }
 .profileText .imgBx img{
     position: absolute;
@@ -214,11 +214,6 @@ body{
     width: 10%;
     height: 10%;
 }
-.contactInfo .language{
-
-}
-
-
 
 
 
@@ -233,7 +228,7 @@ body{
     justify-content: center;
     text-align: center;
     text-decoration:underline;
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     color: black;
     margin-top: -2rem;
     padding-bottom: 2rem;
@@ -319,7 +314,7 @@ body > div > div.right_side > div:nth-child(2){
 .langages ul li{
     list-style: none;
     margin: 0 15px 0;
-    font-size: 4rem;
+    font-size: 2rem;
     transition: transform .2s;
 }
 .langages ul li:hover{
@@ -362,7 +357,7 @@ body > div > div.right_side > div:nth-child(2){
 }
 
 
-@media (max-width: 800px)
+@media (max-width: 1000px)
 {
     .container{
         margin: 10px;
