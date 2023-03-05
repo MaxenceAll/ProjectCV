@@ -367,6 +367,8 @@ body > div > div.right_side > div:nth-child(2){
 }
 
 
+
+
 @media (max-width: 1000px)
 {
     .container{
@@ -402,6 +404,10 @@ body > div > div.right_side > div:nth-child(2){
         display:flex;
         justify-content: center;
         align-items: center;
+    }
+    .title-changedirection{
+        transform:rotate(270deg);
+        text-align: center;
     }
 }
 
