@@ -296,8 +296,12 @@ p{
 .img_company{
 
     width: 60%;
-    height: auto;
+    height: auto;    
+}
+.img_companyINSY{
 
+    width: 20%;
+    /* height: auto;     */
 }
 
 
